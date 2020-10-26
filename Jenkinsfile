@@ -8,12 +8,12 @@ pipeline {
         stage('clone repository') {
             steps {
                 deleteDir()
-                git branch: 'master', credentialsId: 'gitlab_new', url: 'https://github.com/ArturMustafin/my-first-project-at.git'
+                git branch: 'master', credentialsId: 'gitlab_new', url: 'https://github.com/ArturMustafin/first-project-at.git'
             }
         }
         stage('run tests') {
             steps {
-                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.31.84:4444/wd/hub"
+                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.1.211:4444/wd/hub"
             }
         }
         stage('generate allure report') {
