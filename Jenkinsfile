@@ -13,7 +13,7 @@ pipeline {
         }
         stage('run tests') {
             steps {
-                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.1.211:4444"
+                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://localhost:4444"
             }
         }
         stage('generate allure report') {
