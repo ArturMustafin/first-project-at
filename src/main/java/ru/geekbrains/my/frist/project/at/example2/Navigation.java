@@ -15,10 +15,10 @@ public class Navigation {
 
     public SelenideElement getButton (String nameButton) {
         switch (nameButton) {
-            case "Курсы": {
+            case "Программы обучения": {
                 return courses;
             }
-            case "Вебинары": {
+            case "Мероприятия": {
                 return events;
             }
             case "Форум": {

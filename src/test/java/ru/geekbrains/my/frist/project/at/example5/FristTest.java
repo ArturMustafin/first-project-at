@@ -12,7 +12,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import ru.geekbrains.my.frist.project.at.example2.Page;
 
-import java.util.concurrent.TimeUnit;
+
 
 @Story("Навигация")
 public class FristTest {
@@ -27,8 +27,8 @@ public class FristTest {
 
     @ParameterizedTest
     @ValueSource(strings = {
-            "Курсы",
-            "Вебинары",
+            "Программы обучения",
+            "Мероприятия",
             "Форум",
             "Блог",
             "Тесты",
@@ -37,7 +37,7 @@ public class FristTest {
 
     @Feature("Проверка перехода")
     public void  button(String name){
-        Selenide.open("https://geekbrains.ru/courses");
+        Selenide.open("https://gb.ru/tests");
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        driver.manage().window().maximize();
 
