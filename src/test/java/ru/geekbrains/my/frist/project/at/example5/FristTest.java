@@ -21,7 +21,7 @@ public class FristTest {
     @BeforeEach
     void setUp() {
         //Url удалённого веб драйвера
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.remote = "http://172.17.208.1:4444/wd/hub";
         //Определяем какой браузер будем использовать
         Configuration.browser = "chrome";
         //Размер окна браузера
