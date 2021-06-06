@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--WEB ТЕСТИРОВАНИЕ-->
-<!--        <selenide.version>5.7.0</selenide.version>-->
+        <selenide.version>5.7.0</selenide.version>
         <!--ОТЧЕТ ALLURE-->
         <allure.version>2.13.0</allure.version>
         <!--LOMBOK-->
